@@ -230,3 +230,53 @@ header
     font-size: 0.938rem;
     margin-bottom: 1.5rem;
 }
+
+.social .bx
+{
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    background: var(--container-color);
+
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+}
+.social .bx:hover
+{
+    background: var(--main-color);
+    transition: 5s all linear;
+    transform: translateY(-5px);
+}
+.bx.bxl-twitter
+{
+    animation-delay: 1s;
+}
+.bx.bxl-linkedin
+{
+    animation-delay: 2s;
+}
+.bx.bxl-github
+{
+    animation-delay: 3s;
+}
+.bx.bxl-gmail
+{
+    animation-delay: 4s;
+}
+
+@keyframes float
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-5px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
