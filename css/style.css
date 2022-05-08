@@ -19,6 +19,14 @@
     --heading-color: #222321;
     --box-color: #0d0f26;
     --bg-color: #fff;
+
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 50px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 250px;
+    --width-container: 1200px;
+    --height-container: 1200px;
 }
 
 body
@@ -292,10 +300,12 @@ header
 
 .work-content 
 {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    /* grid-template-columns: repeat(2,1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    gap: 2rem;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .work-box
@@ -532,26 +542,38 @@ header
 
 
 /* PERSONAL PROJECTS */
-
 .projects.heading
 {
     color: var(--main-color);
-
 }
 
-.projects-type 
+.projects-type
 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-column-gap: var(--spacing-xxl);
+    grid-row-gap: var(--spacing-xxl);
+    max-width: var(--width-container);
+    max-height: var(--height-container);
+    width: 100%;
+    height: 100%;
 }
 
 .projects-box
 {
+    list-style: none;
     position: relative;
     width: 100%;
     height: 320px;
+    padding-bottom: 500px;
+
+}
+
+.projects-box:after
+{
+    content: '';
+    display: block;
+    width: 100%;
 }
 .projects-box h2
 {
@@ -559,19 +581,25 @@ header
 
 }
 
-.projects-image
+.projects-mini-item
 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;    
+    margin: 0;
+    padding: 0;
+    position: relative;
+
 }
+
+
 
 .projects-mini-grid
 {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 2rem;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
 }
 
 
@@ -628,5 +656,54 @@ header
 .projects-text .color
 {
     color: var(--main-color);
+}
+
+
+
+/*GAMES*/
+.games .heading
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.game-text h2
+{
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
+.game-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.games-text p
+{
+    font-size: 0.938rem;
+    margin-bottom: 1.5rem;
+    
+}
+.games-text .color
+{
+    color: var(--main-color);
+}
+
+.game-mini-grid
+{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
 }
 
