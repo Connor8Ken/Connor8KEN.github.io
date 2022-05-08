@@ -164,13 +164,13 @@ header
 {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
     background: #98a7fc;
     overflow:hidden;
     margin-bottom: 2rem;
     box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.233);
     border: 5px solid #fff;
     border-color: var(--main-color);
+    border-radius: 50%;
 
 }
 .home-img
@@ -311,6 +311,7 @@ header
     height: 100%;
     object-fit: cover;
     object-position: center;
+    
 }
 
 .work-overlay
@@ -325,6 +326,8 @@ header
     align-items: center;
     justify-content: center;
     background: hsl(234,45%,16%,0.7);
+
+
 }
 
 .work-overlay h2
