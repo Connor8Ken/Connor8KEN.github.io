@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!--SCROLLBAR-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        /* width */
+        ::-webkit-scrollbar 
+        {
+          width: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+            border-radius: 10px;
+
+            background: #647bff; 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover 
+        {
+          background: #647bff; 
+        }
+
+        </style>
+        </head>  
+    <head>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,9 +48,9 @@
                     <!--NAVBAR-->
                     <ul class="navbar">
                         <li><a href="#home" class="nav-link">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
                         <li><a href="#work" class="nav-link">Work</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                         <li><a href="#about" class="nav-link">About</a></li>                       
+                         <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                     <div class="menu-icon">
                         <div class="line1"></div>
@@ -36,30 +62,125 @@
             <!--HOME-->
            <section class="home container="home>
                <div class="home-content">
-                   <div class="home-img">
-                        <img src="images/profile.jpg" alt="">
-                   </div>
-               
-               <div class="home-text">
-                   <h3>Hello</h3>
-                   <h2>I'm <span class="color">Connor</span></h2>
-                   <p>
+                    <div class="home-img">
+                            <img src="images/profile.jpg" alt="">
+                    </div>
+                
+                    <div class="home-text">
+                        <h3>Hello</h3>
+                        <h2>I'm <span class="color">Connor</span></h2>
+                        <p>
 
-                    I am a <span class="color">Junior Game Designer</span> who is passionate about designing and creating video games that bring enjoyment to others.
-                    <br> Here's a bit more <span class="color">about me</span>.
+                            I am a <span class="color">Junior Game Designer</span> who is passionate about designing and creating video games that bring enjoyment to others.
+                            <br> Here's a bit more <span class="color">about me</span>.
 
-                   </p>
+                        </p>
 
-                   <!--SOCIAL-->
-                   <div class="social">
-                        <a href="https://twitter.com/Aitken_"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.linkedin.com/in/connor8ken/"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/Connor8Ken"><i class='bx bxl-github'></i></a>
-                        <a href="mailto:connor@hairyheart.games"><i class='bx bxl-gmail'></i></a>
-                   </div>
-               </div>
-            </div>
-               </section>
+                        <!--SOCIAL-->
+                        <div class="social">
+                                <a href="https://twitter.com/Aitken_"><i class='bx bxl-twitter'></i></a>
+                                <a href="https://www.linkedin.com/in/connor8ken/"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://github.com/Connor8Ken"><i class='bx bxl-github'></i></a>
+                                <a href="mailto:connor@hairyheart.games"><i class='bx bxl-gmail'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--WORK-->
+            <section class="work container" id="work">
+                <!--HEADING-->
+                <h2 class="heading">Work</h2>
+                <!--WORK CONTENT-->
+                <div class="work-text">
+                    <p>Here are some <span class="color">professional projects</span> that I have been involved with.</p>
+                </div> 
+                <div class="work-content">
+
+                    <!--WORK ELEMENT-->
+                    <div class="work-box">
+                        <img src="images/KeyserSwapsThumbnail.png" alt="" class="work-image">
+                        <!--OVERLAY-->
+                        <div class="work-overlay">
+                            <h2>Keyser Swaps</h2>
+                            <p>UI | QA</p>
+                            <a href="https://keyserswaps.com/">
+                                <i class='bx bx-link-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--WORK ELEMENT-->
+                    <div class="work-box">
+                        <img src="images/rally-thumbnail.png" alt="" class="work-image">
+                        <!--OVERLAY-->
+                        <div class="work-overlay">
+                            <h2>Rallyallyally</h2>
+                            <p>Level Design | UI</p>
+                            <a href="https://store.steampowered.com/app/1830540/Rallyallyally/">
+                                <i class='bx bxl-steam'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--WORK ELEMENT-->
+                    <div class="work-box">
+                        <img src="images/mirrorrim-thumbnail.jpg" alt="" class="work-image">
+                        <!--OVERLAY-->
+                        <div class="work-overlay">
+                            <h2>Mirrorrim</h2>
+                            <p>Game Designer</p>
+                            <a href="https://youtu.be/HliUZGzSOLY">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                      
+                </div>
+            </section>
+
+
+            <!--ABOUT-->
+            <section class="about container" id="about">
+                        <!--HEADING-->
+                        <h2 class="heading">About</h2>
+
+                        <!--ABOUT CONTENT-->
+                        <div class="about-content">
+                            <div class="about-data">
+                                <span>About Me</span>
+                                    <h2> Game Designer, <br>
+                                        Video Editor
+                                    </h2>
+
+                                    <a href="Connor Aitken - CV.pdf" class="btn" download="">
+                                        Download CV
+                                        <i class='bx bx-download'></i>
+                                    </a>
+                            </div>    
+                            <div class="about-text">
+                                <p> I’ve had a love for video games for as long
+                                    as I can remember and ever since learning
+                                    about the games industry I have been
+                                    passionate about <span class="color">designing</span> and <span class="color">creating</span>
+                                    games that bring enjoyment to others. I also
+                                    enjoy creating digital art and video editing
+                                    for a variety of genres.
+                                </p>
+                                <p> As a recent graduate from <span class="color">Abertay
+                                    University</span>, I am eager to make my first
+                                    steps into the industry to learn new things
+                                    as well as bring my own creativity to the
+                                    table.
+                                </p>
+                                
+                            </class>                   
+                        </div>
+            </section>
+
+
 
             <!--LINK TO JS-->
             <script src="js/main.js"></script>
