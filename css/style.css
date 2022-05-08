@@ -236,6 +236,7 @@ header
     color: var(--main-color);
 }
 
+
 .social .bx
 {
     font-size: 1.3rem;
@@ -310,9 +311,9 @@ header
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    
+    object-position: center;    
 }
+
 
 .work-overlay
 {
@@ -426,8 +427,8 @@ header
 .about-content 
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
 }
 
 .about-data-span
@@ -480,5 +481,47 @@ header
 {
     color: var(--main-color);
 }
+
+.about-skills h2
+{
+    color: var(--main-color);
+
+}
+.about-skills p
+{
+    font-size: 0.938rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+.about-skills .color
+{
+    color: var(--main-color);
+}
+
+.about-hobbies p
+{
+    font-size: 0.938rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+.about-hobbies h2
+{
+    color: var(--main-color);
+
+}
+.about-hobbies p
+{
+    font-size: 0.938rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+.about-hobbies .color
+{
+    color: var(--main-color);
+}
+
 
 
