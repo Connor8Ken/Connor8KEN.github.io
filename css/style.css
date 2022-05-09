@@ -80,6 +80,7 @@ header
     padding: 20px 0;
 }
 
+
 .logo
 {
     font-size: 1.2rem;
@@ -92,6 +93,11 @@ header
     display: flex;
     align-items: center;
     column-gap: 1.5rem;
+}
+
+.navbar ul li a:hover
+{
+    display: block;
 }
 
 .nav-link
@@ -670,11 +676,6 @@ header
     margin-bottom: 2rem;
 }
 
-.game-text h2
-{
-    font-size: 3.5rem;
-    line-height: 4.8rem;
-}
 .game-text
 {
     display: flex;
@@ -683,12 +684,22 @@ header
     justify-content: center;
     text-align: center;
 }
+.game-text h2
+{
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
 
 
 .games-text p
 {
     font-size: 0.938rem;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     
 }
 .games-text .color
@@ -696,7 +707,7 @@ header
     color: var(--main-color);
 }
 
-.game-mini-grid
+.games-grid
 {
     width: 95%;
     max-width: 1200px;
@@ -704,6 +715,57 @@ header
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
+
+/*RENDERS*/
+.renders .heading
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.renders-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.renders-text h2
+{
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
+
+
+.renders-text p
+{
+    font-size: 0.938rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.renders-text .color
+{
+    color: var(--main-color);
+}
+
+.renders-grid
+{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
