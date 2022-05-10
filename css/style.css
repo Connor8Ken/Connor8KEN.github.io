@@ -19,6 +19,7 @@
     --heading-color: #222321;
     --box-color: #0d0f26;
     --bg-color: #fff;
+    --nav-color: #090a1a;
 
     --spacing-s: 8px;
     --spacing-m: 16px;
@@ -78,7 +79,45 @@ header
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    background-color: var(--nav-color);
+
 }
+
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	font-size:20px;
+	line-height: 20px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+    color: var(--main-color);
+    background-color: var(--container-color);
+    transition: .5s all linear;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 45px; /* the height of the main nav */
+    background-color: var(--nav-color);
+
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:block;
+}
+	
+
+
+
+
+
+
 
 
 .logo
@@ -95,10 +134,6 @@ header
     column-gap: 1.5rem;
 }
 
-.navbar ul li a:hover
-{
-    display: block;
-}
 
 .nav-link
 {
@@ -676,7 +711,7 @@ header
     margin-bottom: 2rem;
 }
 
-.game-text
+.games-text
 {
     display: flex;
     flex-direction: column;
@@ -684,23 +719,47 @@ header
     justify-content: center;
     text-align: center;
 }
-.game-text h2
+.games-text h3
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.games-text h3::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(-60%);
+    left: -35%;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color)
+}
+.games-text h3::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(60%);
+    right: -35%;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color)
+}
+.games-text h2
 {
     font-size: 3.5rem;
     line-height: 4.8rem;
 }
-
-
 .games-text p
 {
     font-size: 0.938rem;
     margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
 }
 .games-text .color
 {
@@ -736,23 +795,47 @@ header
     justify-content: center;
     text-align: center;
 }
+.renders-text h3
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.renders-text h3::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(-60%);
+    left: -35%;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color)
+}
+.renders-text h3::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(60%);
+    right: -35%;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color)
+}
 .renders-text h2
 {
     font-size: 3.5rem;
     line-height: 4.8rem;
 }
-
-
 .renders-text p
 {
     font-size: 0.938rem;
     margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
 }
 .renders-text .color
 {
