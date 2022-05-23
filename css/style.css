@@ -337,6 +337,12 @@ nav ul li:hover > ul {
 }
 
 
+
+
+
+
+
+
 /* WORK */
 
 .work-content 
@@ -580,6 +586,119 @@ nav ul li:hover > ul {
 {
     color: var(--main-color);
 }
+
+
+
+/* EXPERIENCE*/
+.experience-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.experience-text h3
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.experience-text h3::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(-60%);
+    left: -35%;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color)
+}
+.experience-text h3::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(60%);
+    right: -35%;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color)
+}
+.experience-text h2
+{
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
+.experience-text p
+{
+    font-size: 0.938rem;
+    margin-bottom: 1.5rem;
+}
+.experience-text .color
+{
+    color: var(--main-color);
+}
+
+
+
+
+/* TIMELINE */
+.experience-timeline
+{
+    position:relative;
+    width:700px;
+    height:450px;
+    float:left;
+    margin-left:145px;
+}
+
+.timeline-bar
+{
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    background-color: var(--main-color);
+    border-radius:10px;
+}
+
+.experience-timeline li
+{
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:330px;
+    height:relative;
+    background-color: var(--main-color);
+    padding:15px;
+    box-sizing:border-box;
+    border-radius:10px;
+    list-style-type:none;
+    color:white;
+    font-size:15px;
+}
+
+.experience-timeline li:nth-child(odd)
+{
+    margin-right:10px;
+    right:-10px;
+}
+.experience-timeline li:nth-child(even)
+{
+    left:370px;
+}
+
+
+
 
 
 /* PERSONAL PROJECTS */
