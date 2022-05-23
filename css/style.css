@@ -30,6 +30,74 @@
     --height-container: 1200px;
 }
 
+/* COLLAPSE SECTION */
+.collapse
+{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 2rem;
+
+    align-items: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--body-color);
+
+    position: relative;
+    display: flex;
+
+    display: block; margin:0 auto;
+
+
+}
+.collapse h2
+{
+    color: var(--main-color);
+    align-items: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--body-color);
+
+    position: relative;
+    display: flex;
+
+}
+
+
+.active,
+.collapse:hover {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background-color: var(--main-color);
+
+    position: relative;
+    display: flex;
+    
+}
+.collapse h2:hover
+ {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background-color: var(--main-color);
+
+    position: relative;
+    display: flex;
+}
+.collapse-holder
+{
+    overflow: hidden;
+    display: none;
+}
+
+
 body
 {
     color: var(--bg-color);
@@ -702,6 +770,8 @@ nav ul li:hover > ul {
 
 
 /* PERSONAL PROJECTS */
+
+
 .projects.heading
 {
     color: var(--main-color);
